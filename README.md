@@ -1,4 +1,5 @@
 STOPWATCH WEBAPPLICATION
+
 This project is a Stopwatch Web Application developed using HTML, CSS, and JavaScript.
 It allows users to measure time with start, pause, and reset functionalities.
 The stopwatch interface is designed with a minimal and modern layout for better usability.
@@ -11,4 +12,6 @@ Accurate time tracking
 Clean UI design
 Real-time time updates
 Lightweight and responsive interface
-Technologies Used: HTML, CSS, JavaScript
+
+TECHNOLOGIES USED: 
+HTML, CSS, JavaScript
