@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Stopwatch | Precision Reimagined</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container" id="stopwatch-container">
+        <header class="top-bar">
+            <span class="time-header" id="real-time-clock">00:00:00</span>
+            <div class="status-brand">PRECISION</div>
+            <div class="top-actions">
+                <button class="icon-toggle" id="soundToggle" onclick="toggleSound()" title="Toggle Sound">🔊</button>
+            </div>
+        </header>
+
+        <div class="clock-face-container">
+            <div class="main-dial">
+                <div class="ticks" id="ticks-container"></div>
+                <div class="numbers">
+                    <span class="num num-60">60</span>
+                    <span class="num num-05">05</span>
+                    <span class="num num-10">10</span>
+                    <span class="num num-15">15</span>
+                    <span class="num num-20">20</span>
+                    <span class="num num-25">25</span>
+                    <span class="num num-30">30</span>
+                    <span class="num num-35">35</span>
+                    <span class="num num-40">40</span>
+                    <span class="num num-45">45</span>
+                    <span class="num num-50">50</span>
+                    <span class="num num-55">55</span>
+                </div>
+
+                <div class="digital-display-group">
+                    <div id="display-main">00:<span class="teal">00</span>.00</div>
+                    <div id="display-lap-current">00:00.00</div>
+                </div>
+
+                <div class="sub-dial">
+                    <div class="sub-ticks" id="sub-ticks-container"></div>
+                    <div class="sub-numbers">
+                        <span>30</span>
+                        <span>10</span>
+                        <span>20</span>
+                    </div>
+                    <div class="sub-needle" id="sub-needle"></div>
+                </div>
+
+                <div class="main-needle" id="main-needle"></div>
+            </div>
+        </div>
+
+        <div class="laps-section">
+            <div class="laps-header">
+                <span class="col-lap">Lap</span>
+                <span class="col-time">Split</span>
+                <span class="col-total">Total</span>
+            </div>
+            <ul id="laps"></ul>
+        </div>
+
+        <div class="controls">
+            <button class="btn-circle btn-lap" id="lapBtn" onclick="lapTimer()" title="Lap">
+                <span>🏳</span>
+            </button>
+            <button class="btn-main" id="actionBtn" onclick="toggleTimer()" title="Start/Pause">
+                <span id="playIcon">▶</span>
+            </button>
+            <button class="btn-circle btn-reset" id="resetBtn" onclick="resetTimer()" title="Reset">
+                <span>🔄</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
